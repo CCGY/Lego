@@ -1,2 +1,4 @@
 # Lego
-case study
+Case study
+
+Please use the PPT file for overview
