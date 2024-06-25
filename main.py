@@ -10,7 +10,7 @@ import threading
 
 
 def main():
-    # Define 
+    # Define address
     url = "tcp://127.0.0.1:5555"
 
     # Create a camera node
@@ -38,7 +38,7 @@ def main():
     processing_thread = threading.Thread(target=brick_sorting_node.run)
     processing_thread.start()
 
-
+    # Start logging node in a separate thread
     logging_node = LoggingNode(url)
     logging_thread = threading.Thread(target=logging_node.run)
     logging_thread.start()
