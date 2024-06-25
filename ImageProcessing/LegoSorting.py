@@ -70,7 +70,7 @@ class LegoBrickSorting(ImageProcessing):
 def test():
     brick_sorting = LegoBrickSorting()
     img = cv2.imread("PATH to Sample Testing image contains lego brick")
-    result = brick_sorting.run(img)
+    result = brick_sorting.run([img])
 
 
 if __name__ == "__main__":
