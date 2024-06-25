@@ -119,7 +119,7 @@ class LegoBrickRecognition(ImageProcessing):
 def test():
     classifier = LegoBrickRecognition()
     img = cv2.imread("PATH to Sample Testing image contains lego brick")
-    result = classifier.classify(img)
+    result = classifier.run(img)
 
 
 if __name__ == "__main__":
